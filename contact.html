@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact ZDC | Zynex Data Concepts</title>
+  <meta name="description" content="Start your consultation with ZDC: share company details, needs, and timeline.">
+  <meta property="og:title" content="Contact ZDC | Zynex Data Concepts">
+  <meta property="og:description" content="Start your consultation with ZDC: share company details, needs, and timeline.">
+  <meta property="og:image" content="assets/og/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Zynex Data Concepts Home">
+      <img src="assets/img/logo.svg" alt="Zynex Data Concepts logo" height="36">
+    </a>
+    <nav id="primary-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="btn btn-small">Request a Consultation</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-hero">
+    <h1 class="reveal">Start your consultation</h1>
+    <p class="lead reveal delay-1">Every great technology decision starts with a clear conversation.</p>
+  </section>
+
+  <form id="ms-form" class="ms-form reveal" action="https://formspree.io/f/XXXXXXXX" method="POST" novalidate>
+    <div class="ms-step active" data-step="1">
+      <h2>Company</h2>
+      <label>Company Name
+        <input name="company" type="text" required>
+      </label>
+      <label>Company Size
+        <select name="size" required>
+          <option value="" disabled selected>Select size</option>
+          <option>1–10</option>
+          <option>11–50</option>
+          <option>51–200</option>
+          <option>201–500</option>
+          <option>500+</option>
+        </select>
+      </label>
+      <div class="ms-actions">
+        <button type="button" class="btn next">Next</button>
+      </div>
+    </div>
+
+    <div class="ms-step" data-step="2">
+      <h2>Needs & Timeline</h2>
+      <label>IT Needs
+        <textarea name="needs" rows="6" required></textarea>
+      </label>
+      <label>Implementation Timeline
+        <select name="timeline" required>
+          <option value="" disabled selected>Select timeline</option>
+          <option>ASAP</option>
+          <option>3–6 months</option>
+          <option>6–12 months</option>
+          <option>12+ months</option>
+        </select>
+      </label>
+      <div class="ms-actions">
+        <button type="button" class="btn-outline prev">Back</button>
+        <button type="button" class="btn next">Next</button>
+      </div>
+    </div>
+
+    <div class="ms-step" data-step="3">
+      <h2>Contact</h2>
+      <label>Contact Email
+        <input name="email" type="email" required>
+      </label>
+      <div class="ms-actions">
+        <button type="button" class="btn-outline prev">Back</button>
+        <button type="submit" class="btn">Send Request</button>
+      </div>
+      <p class="form-note">This form uses Formspree to send submissions to your email. Replace the action URL with your Formspree endpoint.</p>
+    </div>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Zynex Data Concepts — Independent IT consulting for Canadian SMBs.</p>
+  </div>
+</footer>
+</body>
+</html>
